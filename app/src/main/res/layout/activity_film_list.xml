@@ -12,19 +12,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/list_fragment"
+        <FrameLayout
+            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="es.ua.eps.fragment.FilmListFragment"
-            android:layout_weight="1" />
+            android:layout_height="match_parent">
+        </FrameLayout>
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/details_fragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="es.ua.eps.fragment.FilmDataFragment"
-            android:layout_weight="1" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
